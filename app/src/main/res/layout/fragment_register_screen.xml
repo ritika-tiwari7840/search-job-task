@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterScreen">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="poppins"
+        >
+
+        <TextView
+            android:id="@+id/register_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Create Account"
+            android:textAlignment="center"
+            android:textColor="#1f41bb"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+
+
+        <TextView
+            android:id="@+id/register_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Create an account so you can explore all the existing jobs"
+            android:textAlignment="center"
+            android:textColor="#2b2b2b"
+            android:textSize="16sp"
+
+            />
+
+
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginHorizontal="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_border"
+            android:textSize="14sp"
+            android:padding="2dp"
+            android:paddingStart="15dp"
+
+
+            />
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginHorizontal="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:background="@drawable/edit_text_border"
+            android:textSize="14sp"
+            android:padding="2dp"
+            android:paddingStart="15dp"
+
+
+            />
+        <EditText
+            android:id="@+id/register_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginHorizontal="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:background="@drawable/edit_text_border"
+            android:textSize="14sp"
+            android:padding="2dp"
+            android:paddingStart="15dp"
+
+
+            />
+
+
+
+        <Button
+            android:id="@+id/register_signin"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginHorizontal="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:backgroundTint="#1f41bb"
+            android:text="Sign Up"
+            app:cornerRadius="10sp"
+            android:textSize="15sp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/register_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="520dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Already have an account"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:cornerRadius="13sp"
+            android:clickable="true"
+
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/register_account_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="600dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Or continue with"
+            android:textAlignment="center"
+            android:textColor="#1f41bb"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="13sp"
+            />
+
+        <ImageButton
+            android:id="@+id/register_google"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="630dp"
+            app:layout_constraintEnd_toStartOf="@+id/register_facebook"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/google"
+            android:backgroundTint="#ececec"
+            android:background="@drawable/edit_text_border"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+
+
+            />
+
+
+        <ImageButton
+            android:id="@+id/register_facebook"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="630dp"
+            app:layout_constraintStart_toEndOf="@+id/register_google"
+            app:layout_constraintEnd_toStartOf="@+id/register_apple"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/facebook"
+            android:backgroundTint="#ececec"
+            android:background="@drawable/edit_text_border"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:cornerRadius="13sp"
+            />
+
+        <ImageButton
+            android:id="@+id/register_apple"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="630dp"
+            app:layout_constraintStart_toEndOf="@+id/register_facebook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/apple"
+            android:backgroundTint="#ececec"
+            android:background="@drawable/edit_text_border"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:cornerRadius="13sp"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
