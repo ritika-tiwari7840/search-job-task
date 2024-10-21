@@ -58,7 +58,11 @@ class WelcomeScreen : Fragment() {
             navController.navigate(R.id.action_welcomeScreen_to_loginScreen)
         }
 
+        view.findViewById<Button>(R.id.welcome_reg).setOnClickListener {
 
+
+            navController.navigate(R.id.action_welcomeScreen_to_registerScreen)
+        }
 
 
         return view
