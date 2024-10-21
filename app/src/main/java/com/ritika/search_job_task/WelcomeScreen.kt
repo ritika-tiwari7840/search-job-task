@@ -6,12 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import com.ritika.search_job_task.databinding.ActivityMainBinding
 
 class WelcomeScreen : Fragment() {
+    private lateinit var navController:NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+    }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        navController=Navigation.findNavController(view)
     }
 
     override fun onCreateView(
@@ -43,6 +52,14 @@ class WelcomeScreen : Fragment() {
             transaction.addToBackStack(null)
             transaction.commit()
         }
+        view.findViewById<Button>(R.id.welcome_login).setOnClickListener {
+
+
+            navController.navigate(R.id.action_welcomeScreen_to_loginScreen)
+        }
+
+
+
 
         return view
     }
