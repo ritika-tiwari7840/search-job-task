@@ -35,14 +35,13 @@
 
         <TextView
             android:id="@+id/register_text"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="40dp"
             android:layout_marginTop="100dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="Create an account so you can explore all the existing jobs"
+            android:text="Create an account so you can explore all the \n existing jobs"
             android:textAlignment="center"
             android:textColor="#2b2b2b"
             android:textSize="16sp"
@@ -128,7 +127,7 @@
 
         <TextView
             android:id="@+id/register_create_account"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="520dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -148,7 +147,7 @@
 
         <TextView
             android:id="@+id/register_account_text"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="600dp"
             app:layout_constraintEnd_toEndOf="parent"
