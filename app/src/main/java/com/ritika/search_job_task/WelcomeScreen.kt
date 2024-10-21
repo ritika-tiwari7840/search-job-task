@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.ritika.search_job_task.databinding.ActivityMainBinding
+//import com.ritika.search_job_task.databinding.ActivityMainBinding
 
 class WelcomeScreen : Fragment() {
     private lateinit var navController:NavController

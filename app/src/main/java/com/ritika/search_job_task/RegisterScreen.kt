@@ -6,14 +6,23 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.navigation.NavController
+import androidx.navigation.NavOptions
+import androidx.navigation.Navigation
 
 
 class RegisterScreen : Fragment() {
 
+    private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+    }
 
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        navController= Navigation.findNavController(view)
     }
 
     override fun onCreateView(
@@ -34,6 +43,24 @@ class RegisterScreen : Fragment() {
             transaction.replace(R.id.main_activity, loginFragment)
             transaction.addToBackStack(null)
             transaction.commit()
+        }
+
+        view.findViewById<TextView>(R.id.register_create_account).setOnClickListener {
+
+
+            navController.navigate(R.id.action_registerScreen_to_loginScreen,
+
+
+                null, // optional arguments
+                NavOptions.Builder()
+                    .setPopUpTo(R.id.welcomeScreen, false) // Clear up to and including fragmentA
+                    .build()
+
+            )
+
+
+
+
         }
 
         return view

@@ -21,7 +21,11 @@
         android:id="@+id/loginScreen"
         android:name="com.ritika.search_job_task.LoginScreen"
         android:label="fragment_login_screen"
-        tools:layout="@layout/fragment_login_screen" />
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_loginScreen_to_registerScreen"
+            app:destination="@id/registerScreen" />
+    </fragment>
     <fragment
         android:id="@+id/registerScreen"
         android:name="com.ritika.search_job_task.RegisterScreen"
