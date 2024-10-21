@@ -6,12 +6,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingVertical="20dp"
     tools:context=".LoginScreen">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fontFamily="@font/black"
+
        >
 
         <TextView
@@ -217,5 +223,5 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
+    </ScrollView>
 </FrameLayout>

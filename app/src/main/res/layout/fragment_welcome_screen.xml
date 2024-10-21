@@ -9,11 +9,18 @@
     android:id="@+id/welcome_screen"
 
 >
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingBottom="20dp"
 
        >
 
@@ -46,7 +53,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textStyle="bold"
         android:lineHeight="42sp"
         />
 
@@ -107,5 +113,5 @@
         />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
+    </ScrollView>
 </FrameLayout>
